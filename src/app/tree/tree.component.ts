@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Tree } from '../Tree';
+import { Tree } from '../models/tree';
 
 @Component({
   selector: 'app-tree',
