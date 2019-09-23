@@ -1,0 +1,16 @@
+<div class="row">
+
+  <!-- Generate card for each tree object -->
+  <div *ngFor="let tree of Trees" class="col-lg-4 col-md-6 mb-4">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#">{{tree.name}}</a>
+        </h4>
+        <h5>${{tree.price}}</h5>
+        <p class="card-text">{{tree.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
