@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Tree } from '../models/tree';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-tree',
@@ -12,20 +13,11 @@ export class TreeComponent implements OnInit {
 
 
 
-  constructor() {
-    for (let i = 0; i < 10; i++) {
-      let tree: Tree = {
-        id: i,
-        name: 'Tree ' + i,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
-        price: 100
-      };
+  constructor(private productService: ProductService) {
 
-      this.Trees.push(tree);
-    }
   }
 
   ngOnInit() {
+    this.Trees = this.productService.getProducts();
   }
-
 }
