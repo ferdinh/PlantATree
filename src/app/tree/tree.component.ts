@@ -10,7 +10,7 @@ import { ProductService } from '../product.service';
 export class TreeComponent implements OnInit {
 
   Trees: Tree[] = [];
-
+  searchBox: string;
 
 
   constructor(private productService: ProductService) {
