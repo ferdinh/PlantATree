@@ -11,7 +11,7 @@ export class ProductService {
   constructor() {
 
     this.Trees.push(new Tree(
-      1,
+      0,
       'Cleveland Pear',
       34.99,
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -19,7 +19,7 @@ export class ProductService {
     ));
 
     this.Trees.push(new Tree(
-      2,
+      1,
       'American Hazelnut',
       10.98,
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -27,7 +27,7 @@ export class ProductService {
     ));
 
     this.Trees.push(new Tree(
-      3,
+      2,
       'Nectarine Springred',
       49.99,
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
@@ -43,7 +43,7 @@ export class ProductService {
     ));
 
     this.Trees.push(new Tree(
-      3,
+      4,
       'Michelia Figo',
       11.99,
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!',
