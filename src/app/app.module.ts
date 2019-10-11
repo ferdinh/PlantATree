@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TreeComponent } from './tree/tree.component';
 import { TreeDetailComponent } from './tree-detail/tree-detail.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TreeDetailComponent } from './tree-detail/tree-detail.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    Ng2SearchPipeModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,11 @@
 <div class="row">
-
-  <!-- Generate card for each tree object -->
-  <div *ngFor="let tree of Trees" class="col-lg-4 col-md-6 mb-4">
+  <!-- Search Box -->
+  <input class="form-control" type="text" name="search" [(ngModel)]="searchBox" autocomplete="off"
+    placeholder="Search..." />
+</div>
+<!-- Generate card for each tree object -->
+<div class="row">
+  <div *ngFor="let tree of Trees | filter:searchBox" class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100">
       <a href="#"><img class="card-img-top" src="{{tree.imgUrl}}" alt=""></a>
       <div class="card-body">
