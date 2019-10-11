@@ -21,7 +21,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-	Ng2SearchPipeModule
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
